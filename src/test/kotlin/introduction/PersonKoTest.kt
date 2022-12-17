@@ -1,4 +1,4 @@
-package step1
+package introduction
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.nulls.shouldBeNull

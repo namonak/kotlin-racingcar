@@ -1,11 +1,11 @@
-package step2.domain
+package calculator.domain
 
+import calculator.StringCalculator
 import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatThrownBy
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
-import step2.StringCalculator
 
 class CalculatorTest {
     @DisplayName("연산자 예외처리 테스트")
