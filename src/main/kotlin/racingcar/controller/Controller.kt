@@ -7,7 +7,7 @@ import racingcar.domain.input.Racers
 import racingcar.view.InputView
 import racingcar.view.ResultView
 
-class Controller {
+object Controller {
     fun start() {
         val cars = inputRacers()
         val playTime = inputPlayTime()
