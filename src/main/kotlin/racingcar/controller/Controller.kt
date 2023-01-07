@@ -23,7 +23,7 @@ object Controller {
             val racers = Racers(InputView.inputRacers())
             Cars(racers.value.toTypedArray())
         } catch (e: Exception) {
-            InputView.printError(e.message!!)
+            e.message?.let(InputView::printError)
             inputRacers()
         }
     }
@@ -32,7 +32,7 @@ object Controller {
         return try {
             PlayTime(InputView.inputPlayTime()).value
         } catch (e: Exception) {
-            InputView.printError(e.message!!)
+            e.message?.let(InputView::printError)
             inputPlayTime()
         }
     }
